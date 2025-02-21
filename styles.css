@@ -15,7 +15,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 10px 40px;
-    background-color: rgba(0, 0, 0, 0.5); /* Transparent Black */
+    background-color: rgba(0, 0, 0, 0.073); /* Transparent Black */
     width: 100%;
     position: fixed;
     top: 0;
@@ -53,6 +53,46 @@ ul li a:hover {
     color: white;
     font-size: 16px;
 }
+
+
+/* dropdown  css */
+
+.dropdown {
+    position: relative; /* Required for positioning the dropdown menu */
+}
+
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute; /* Absolute positioning relative to the dropdown */
+    top: 100%; /* Positioned below the dropdown link */
+    left: 0;
+    background-color: #fff; /* Adjust to your design */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+    z-index: 10; /* Ensure it's above other elements */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show the menu on hover */
+}
+
+.dropdown-menu li {
+    padding: 10px 15px; /* Adjust padding as needed */
+    text-align: left;
+}
+
+.dropdown-menu li a {
+    display: block; /* Make the whole list item clickable */
+    text-decoration: none;
+    color: #333; /* Adjust color as needed */
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0; /* Hover effect */
+}
+
 .cart {
     
     position: relative;
@@ -79,20 +119,21 @@ ul li a:hover {
     width: 100%;
     padding: 50px 0;
     height: 60vw;
-    background-image: url('https://images.unsplash.com/photo-1498709112912-9be3173d30be?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D');
+    background-image: url('https://themexbd.com/poket/restaurant/wp-content/uploads/2021/11/slider-1.jpg');
     align-content: center;
     justify-content: left;
 }
 
 .left-home{
     /* border: 20px solid yellow; */
+    
     height: 50%;
     width: 50%;
 }
 .home-heading{
     /* border: 3px solid red; */
-    font-size: 60px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: 500;
     line-height: 0%;
     text-transform: uppercase;
 }
@@ -100,7 +141,7 @@ button {
     background: #ff4500;
     font-size: 20px;
     color: white;
-    padding: 10px 20px;
+    padding: 20px 50px;
     border: none;
     cursor: pointer;
     transition: transform 0.7s ease, box-shadow 0.7s ease, background-color 0.7s ease, color 0.7s ease;

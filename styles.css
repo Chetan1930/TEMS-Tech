@@ -76,7 +76,7 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-  box-shadow: #f0ad4e;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Corrected box-shadow */
   z-index: 10;
 }
 
@@ -137,53 +137,56 @@ body {
   border-radius: 50%;
 }
 
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+  .hamburger {
+      display: block; /* Show hamburger icon on small screens */
+  }
+
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
   }
 
   .nav-links {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-    display: none; /* Initially hide the menu */
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+      display: none; /* Initially hide the menu */
   }
 
   .nav-links li {
-    text-align: left;
-    width: 100%;
+      text-align: left;
+      width: 100%;
   }
 
   .nav-links li a {
-    display: block;
-    padding: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      display: block;
+      padding: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .dropdown-menu {
-    position: static;
-    box-shadow: none;
-    display: none; /* Initially hide dropdown menus */
+      position: static;
+      box-shadow: none;
+      display: none; /* Initially hide dropdown menus */
   }
 
   .dropdown:hover .dropdown-menu,
   .nav-links.active {
-    display: block; /* Show menu and dropdown on mobile */
+      display: block; /* Show menu and dropdown on mobile */
   }
 
   .icons {
-    margin-top: 10px;
-  }
-
-  /* Add a hamburger icon for mobile menu toggle */
-  .navbar::after {
-    content: "☰"; /* Hamburger icon */
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-    display: block; /* Show only on small screens */
+      margin-top: 10px;
   }
 }
 
@@ -350,7 +353,7 @@ body {
 /* this is the section next to the home -=-------=---=---=--->Chetan Chauhan */
 
 /* Next Home Section Container */
-.next-home {
+#next-home {
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -369,7 +372,7 @@ body {
   max-width: 350px;
   padding: 40px 30px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(14, 12, 12, 0.05);
   border-radius: 8px;
   transition: all 0.3s ease;
   display: flex;
@@ -415,7 +418,7 @@ body {
 
 /* Media Queries */
 @media screen and (max-width: 1200px) {
-  .next-home {
+  #next-home {
     padding: 40px 20px;
   }
 
@@ -425,7 +428,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .next-home {
+  #next-home {
     padding: 30px 15px;
     flex-direction: column;
     align-items: center;
@@ -598,7 +601,7 @@ body {
 /* Menu-list css */
 
 /* Base Styles for Menu Section */
-.menu-list {
+#menu-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -733,7 +736,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .menu-list {
+  #menu-list {
     padding: 60px 15px;
   }
 

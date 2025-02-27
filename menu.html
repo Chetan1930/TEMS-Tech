@@ -8,6 +8,40 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+      .menu-container {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+      }
+      .menu-section {
+          margin-bottom: 40px;
+      }
+      .menu-section h2 {
+          font-size: 24px;
+          color: #e67e22;
+          border-bottom: 2px solid #e67e22;
+          padding-bottom: 10px;
+      }
+      .menu-item {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px 0;
+          border-bottom: 1px solid #ddd;
+      }
+      .menu-item:last-child {
+          border-bottom: none;
+      }
+      .item-name {
+          font-size: 18px;
+          font-weight: bold;
+      }
+      .item-price {
+          font-size: 18px;
+          color: #27ae60;
+      }
+  </style>
 </head>
 
 <body>
@@ -58,8 +92,7 @@
 </header>
 
 
-
-    <section id="menu-list">
+ <section id="menu-list">
         <div class="menu-title">
           <h2>OUR TOP MENU LIST</h2>
         </div>
@@ -104,7 +137,208 @@
       </section>
 
 
+<div class="menu-container">
+  <!-- Main Courses Section -->
+  <div class="menu-section">
+      <h2>Main Courses</h2>
+      <div class="menu-item">
+          <span class="item-name">Grilled Salmon</span>
+          <span class="item-price">₹18.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Chicken Alfredo</span>
+          <span class="item-price">₹14.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Beef Steak</span>
+          <span class="item-price">₹22.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Vegetable Stir Fry</span>
+          <span class="item-price">₹12.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Spaghetti Bolognese</span>
+          <span class="item-price">₹13.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">BBQ Ribs</span>
+          <span class="item-price">₹19.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Margherita Pizza</span>
+          <span class="item-price">₹10.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Lobster Tail</span>
+          <span class="item-price">₹29.99</span>
+      </div>
+  </div>
 
+  <!-- Desserts Section -->
+  <div class="menu-section">
+      <h2>Desserts</h2>
+      <div class="menu-item">
+          <span class="item-name">Chocolate Lava Cake</span>
+          <span class="item-price">₹7.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Cheesecake</span>
+          <span class="item-price">₹6.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Tiramisu</span>
+          <span class="item-price">₹8.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Apple Pie</span>
+          <span class="item-price">₹5.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Ice Cream Sundae</span>
+          <span class="item-price">₹4.99</span>
+      </div>
+  </div>
+
+  <!-- Beverages Section -->
+  <div class="menu-section">
+      <h2>Beverages</h2>
+      <div class="menu-item">
+          <span class="item-name">Fresh Orange Juice</span>
+          <span class="item-price">₹3.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Iced Tea</span>
+          <span class="item-price">₹2.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Mojito</span>
+          <span class="item-price">₹5.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Cappuccino</span>
+          <span class="item-price">₹4.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Red Wine</span>
+          <span class="item-price">₹7.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Sparkling Water</span>
+          <span class="item-price">₹1.99</span>
+      </div>
+  </div>
+
+  <!-- Sides Section -->
+  <div class="menu-section">
+      <h2>Sides</h2>
+      <div class="menu-item">
+          <span class="item-name">French Fries</span>
+          <span class="item-price">₹3.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Onion Rings</span>
+          <span class="item-price">₹4.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Mashed Potatoes</span>
+          <span class="item-price">₹3.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Grilled Vegetables</span>
+          <span class="item-price">₹5.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Garlic Parmesan Fries</span>
+          <span class="item-price">₹4.99</span>
+      </div>
+  </div>
+
+  <!-- Specials Section -->
+  <div class="menu-section">
+      <h2>Specials</h2>
+      <div class="menu-item">
+          <span class="item-name">Chef's Special Pasta</span>
+          <span class="item-price">₹16.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Surf & Turf</span>
+          <span class="item-price">₹34.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Truffle Risotto</span>
+          <span class="item-price">₹19.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Seafood Platter</span>
+          <span class="item-price">₹28.99</span>
+      </div>
+      <div class="menu-item">
+          <span class="item-name">Vegetarian Delight</span>
+          <span class="item-price">₹14.99</span>
+      </div>
+  </div>
+</div>
+
+
+
+   
+
+
+<footer class="footer">
+  <div class="foot-1">
+      <img src="https://themexbd.com/poket/restaurant/wp-content/uploads/2021/11/logo.png" alt="logo" />
+      <p>
+          A monthly digest of the latest news and venen is urna resources. our
+          clinic was created to ma your smile beautiful, healthy and snow-white.
+          venenatis urna resources.
+      </p>
+      <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#"><i class="fab fa-times"></i></a>
+      </div>
+  </div>
+
+  <div class="foot-2">
+      <h2>Navigation</h2>
+      <ul class="foot-nav">
+          <li><a href="#">Become an Affiliate</a></li>
+          <li><a href="#">Community Meetups</a></li>
+          <li><a href="#">Why Buy With Us?</a></li>
+          <li><a href="#">Blog and News</a></li>
+          <li><a href="#">About</a></li>
+      </ul>
+  </div>
+
+  <div class="foot-3">
+      <h2>Address Us</h2>
+      <p><i class="fas fa-map-marker-alt"></i> 378 FA Tower, William SBI 2123, IL, US</p>
+      <p><i class="fas fa-phone"></i> Telephone: (0922) 3354 2252</p>
+      <p><i class="fas fa-envelope"></i> demo@example.com</p>
+      <p><i class="far fa-clock"></i> Time: 9.00am-4.00pm</p>
+  </div>
+
+  <div class="foot-4">
+      <h2>Gallery</h2>
+      <div class="gallery-images">
+          <img src="https://via.placeholder.com/70x70" alt="Gallery Image">
+          <img src="https://via.placeholder.com/70x70" alt="Gallery Image">
+          <img src="https://via.placeholder.com/70x70" alt="Gallery Image">
+          <img src="https://via.placeholder.com/70x70" alt="Gallery Image">
+          <img src="https://via.placeholder.com/70x70" alt="Gallery Image">
+          <img src="https://via.placeholder.com/70x70" alt="Gallery Image">
+      </div>
+  </div>
+
+</footer>
+
+<div>
+  <p>© 2025 chetan. All Rights Reserved.</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>

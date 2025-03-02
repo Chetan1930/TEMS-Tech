@@ -17,7 +17,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
   padding: 10px 0; /* Reduced padding for better mobile view */
 }
@@ -853,5 +853,59 @@ body {
   }
   .foot-2 .foot-nav {
     gap: 10px;
+  }
+}
+
+
+
+/* Add padding to the banner to prevent overlap */
+#bannerAfterHeader {
+  /* border: 2px solid aqua; */
+  margin-top: 60px; /* Same as navbar height */
+  background-image: url("https://unsplash.com/photos/photo-of-pub-set-in-room-during-daytime-poI7DelFiVA"); 
+  padding: 50px 20px 20px; 
+  text-align: center;
+}
+
+/* Inner content styling */
+.insideBanner {
+  /* border: 2px solid red; */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#my-test {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#whereIam {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #bannerAfterHeader {
+      padding: 30px 10px;
+  }
+
+  #my-test {
+      font-size: 1.5rem;
+  }
+
+  #whereIam {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #my-test {
+      font-size: 1.2rem;
+  }
+
+  #whereIam {
+      font-size: 0.8rem;
   }
 }

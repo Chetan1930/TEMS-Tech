@@ -1,0 +1,223 @@
+/* styles.css */
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.sort-options {
+  display: flex;
+  align-items: center;
+}
+
+.sort-options label {
+  margin-right: 10px;
+}
+
+.view-button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-bar input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  cursor: pointer;
+}
+
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    padding-right: 20px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.filter-price, .product-categories, .products {
+    margin-bottom: 20px;
+}
+
+.filter-range {
+    margin-bottom: 10px;
+}
+
+.filter-button {
+    background-color: #e9ecef;
+    color: #212529;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product-categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-categories li {
+    margin-bottom: 5px;
+}
+
+.product-categories a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.products .product-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.products .product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.products .product-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.products .product-item a {
+    text-decoration: none;
+    color: #212529;
+}
+
+/* Product Grid Styles */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.price {
+    color: #888;
+}
+
+.price del {
+    color: #aaa;
+    margin-right: 5px;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #dc3545;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+
+/* Pagination Styles */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    color: #333;
+    margin: 0 4px;
+    border-radius: 4px;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex; /* This will arrange sidebar and product grid side by side */
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px; /* Adjust as needed */
+    padding-right: 20px;
+}
+
+/* Product Grid Styles */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
+    gap: 20px;
+    flex-grow: 1; /* Allows the grid to take up remaining space */
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* Single column on even smaller screens */
+    }
+
+    .container {
+      flex-direction: column; /* Stack sidebar and product grid on small screens */
+  }
+
+  .sidebar {
+      width: 100%; /* Sidebar takes full width on small screens */
+      padding-right: 0;
+  }
+
+}

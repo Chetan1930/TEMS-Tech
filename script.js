@@ -41,3 +41,22 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.classList.toggle('active');
     });
 });
+
+
+
+
+document.getElementById("search-button").addEventListener("click", function () {
+    hide.style.display="block";
+    const query = document.getElementById("search-input").value.trim().toLowerCase();
+    const resultsContainer = document.getElementById("search-results");
+
+
+    // Filter results based on the query
+    const results = data.filter(item => item.includes(query));
+
+    // Display results
+    resultsContainer.innerHTML = results.length
+        ? `<ul>${results.map(item => `<li>${item}</li>`).join("")}</ul>`
+        : "<p>No results found</p>";
+});
+

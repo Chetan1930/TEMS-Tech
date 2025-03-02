@@ -4,109 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Clone</title>
+    <title>Restaurant</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-       /* Contact Form Section Styles */
-#outer-form-1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 60px 20px;
-  background-color: #111;
-  color: #fff;
-  text-align: left; /* Align text to the left within the form */
-  width: 100%;
-  max-width: 800px; /* Limit the form width for better readability */
-  margin: 0 auto; /* Center the form horizontally */
-}
 
-#outer-form-1 h2 {
-  font-size: 28px;
-  margin-bottom: 30px;
-  color: #fff;
-  text-align: center; /* Center the heading above the form */
-  width: 100%;
-}
-
-#outer-form-1 form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 20px;
-}
-
-#outer-form-1 input[type="text"],
-#outer-form-1 input[type="email"],
-#outer-form-1 textarea {
-  padding: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: rgba(255, 255, 255, 0.05);
-  color: #fff;
-  border-radius: 5px;
-  font-size: 16px;
-  width: 100%;
-  box-sizing: border-box; /* Ensure padding doesn't affect width */
-}
-
-#outer-form-1 textarea {
-  height: 150px;
-  resize: vertical; /* Allow vertical resizing of the textarea */
-}
-
-#outer-form-1 input[type="text"]::placeholder,
-#outer-form-1 input[type="email"]::placeholder,
-#outer-form-1 textarea::placeholder {
-  color: #ddd; /* Style the placeholder text */
-}
-
-#outer-form-1 button {
-  padding: 15px 30px;
-  background-color: #f0ad4e;
-  color: #111;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  width: auto; /* Adjust width to content */
-  align-self: center; /* Center the button horizontally */
-}
-
-#outer-form-1 button:hover {
-  background-color: #bb8858;
-  color: #fff;
-}
-
-/* Media Queries for Responsiveness */
-@media screen and (max-width: 768px) {
-  #outer-form-1 {
-    padding: 40px 15px;
-  }
-
-  #outer-form-1 h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-
-  #outer-form-1 input[type="text"],
-  #outer-form-1 input[type="email"],
-  #outer-form-1 textarea {
-    padding: 12px;
-    font-size: 14px;
-  }
-
-  #outer-form-1 button {
-    padding: 12px 25px;
-    font-size: 14px;
-  }
-}
-
-    </style>
 </head>
 
 <body>
@@ -119,28 +21,15 @@
             <span class="hamburger">&#9776;</span>
             <ul class="nav-links">
                 <li class="dropdown">
-                    <a href="index.html">Home ▼</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Home Option 1</a></li>
-                        <li><a href="#">Home Option 2</a></li>
-                        <li><a href="#">Home Option 3</a></li>
-                    </ul>
+                    <a href="index.html">Home</a>
+
                 </li>
                 <li><a href="about.html">About</a></li>
                 <li class="dropdown">
-                    <a href="menu.html">Menu ▼</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Menu Option 1</a></li>
-                        <li><a href="#">Menu Option 2</a></li>
-                        <li><a href="#">Menu Option 3</a></li>
-                    </ul>
+                    <a href="menu.html">Menu </a>
                 </li>
                 <li class="dropdown">
-                    <a href="pages.html">Pages ▼</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Page Option 1</a></li>
-                        <li><a href="#">Page Option 2</a></li>
-                    </ul>
+                    <a href="pages.html">Pages</a>
                 </li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -148,94 +37,243 @@
     
             <div class="icons">
                 <button class="icon-button">🔍</button>
-                <div class="cart">
-                    <button class="icon-button">🛒</button>
-                    <span>0</span>
-                </div>
+                
             </div>
         </nav>
     </header>
+
+        <div id="bannerAfterHeader">
+            <div class="insideBanner">
+                <h3 id="my-test">Pages</h3>
+                <p id="whereIam">You Are Currently Here! > HomeContact >Pages </p>
+            </div>
+        </div>
     
 
     <!-- Hero Section -->
-    <section id="home">
+
+
+    <section id="home" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4') ">
         <div class="hero">
             <div class="left-home">
-                <section class="img-section">
-                    <img src="https://themexbd.com/poket/restaurant/wp-content/uploads/2021/11/text.png"
-                        alt="Hero Image">
-                </section>
-
                 <section class="heading-section">
-                    <p class="home-heading">Explore</p>
+                    <p class="home-heading">WELCOME GUYS</p>
+    
                 </section>
 
-                <button class="btn-mg1"> DISCOVER MORE</button>
+                <button class="btn-mg1"> EXPLORE OUR PAGES</button>
+        
             </div>
         </div>
 
     </section>
-    
-    <h1>Welcome to Our Restaurant</h1>
-    
-    <button>Explore Menu</button>
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are passionate about serving delicious food with a warm atmosphere.</p>
-        <img src="https://example.com/about-image.jpg" alt="About Image">
-    </section>
+ 
 
     <!-- Menu Section -->
-    <section id="menu-list">
+     <div class="divider"></div>
+    <section id="menu-list" style="background-color: #1F1B24 ;">
         <h2>Our Menu</h2>
+        <section id="next-home">
+            <div class="cont1">
+                <img src="https://themexbd.com/poket/restaurant/wp-content/uploads/2021/11/icon2.png" alt="">
+                <h2>Coffee Pack</h2>
+                <p>Check out our menu to see what we offer.</p>
+                <button class="btn-mg1">View Menu</button>
+            </div>
+    
+            <div class="cont1">
+                <img src="https://themexbd.com/poket/restaurant/wp-content/uploads/2021/11/icon-3.png" alt="">
+                <h2>Food Menu</h2>
+                <p>Check out our menu to see what we offer.</p>
+                <button class="btn-mg1">View Menu</button>
+            </div>
+    
+            <div class="cont1">
+                <img src="https://themexbd.com/poket/restaurant/wp-content/uploads/2021/11/icon-4.png" alt="">
+                <h2>Coffee Pack</h2>
+                <p>Check out our menu to see what we offer.</p>
+                <button class="btn-mg1">View Menu</button>
+            </div>
+    
+        </section>
+    </section>
+
+    
+    <section id="menu-list">
+        <div class="menu-title">
+          <h2>OUR TOP MENU LIST</h2>
+        </div>
+        <div class="menu-categories">
+          <p class="category-item active">ALL</p>
+          <p class="category-item">NOON MENU</p>
+          <p class="category-item">AFTERNOON MENU</p>
+          <p class="category-item">NIGHT MENU</p>
+        </div>
         <div class="menu-grid">
-            <div class="menu-item">
-                <img src="https://example.com/menu-item1.jpg" alt="Menu Item 1">
-                <h3>Menu Item 1</h3>
-                <p>Delicious dish made with love.</p>
-                <span>$10.99</span>
+          <div class="menu-item">
+            <img src="https://themexbd.com/poket/restaurant/wp-content/uploads/2021/08/list-1.png" alt="Raw Scallops from Erquy">
+            <h3>Raw Scallops from Erquy</h3>
+            <p class="description">1/3 milk foam, 1/3 hot milk, 1/3 espresso</p>
+          </div>
+          <div class="menu-item">
+            <img src="https://themexbd.com/poket/restaurant/wp-content/uploads/2021/08/list-4.png" alt="Paella with seafood">
+            <h3>Paella with seafood</h3>
+            <p class="description">1/3 milk foam, 1/3 hot milk, 1/3 espresso</p>
+          </div>
+          <div class="menu-item">
+            <img src="https://themexbd.com/poket/restaurant/wp-content/uploads/2021/08/list-2.png" alt="Cod Filet Cooked Cake">
+            <h3>Cod Filet Cooked Cake</h3>
+            <p class="description">1/3 milk foam, 1/3 hot milk, 1/3 espresso</p>
+          </div>
+          <div class="menu-item">
+            <img src="https://themexbd.com/poket/restaurant/wp-content/uploads/2021/08/list-5.png" alt="Raw Scallops from Coffee">
+            <h3>Raw Scallops from Coffee</h3>
+            <p class="description">1/3 milk foam, 1/3 hot milk, 1/3 espresso</p>
+          </div>
+          <div class="menu-item">
+            <img src="https://themexbd.com/poket/restaurant/wp-content/uploads/2021/08/list-3.png" alt="Raw Scallops from Erquy">
+            <h3>Raw Scallops from Erquy</h3>
+            <p class="description">1/3 milk foam, 1/3 hot milk, 1/3 espresso</p>
+          </div>
+          <div class="menu-item">
+            <img src="https://themexbd.com/poket/restaurant/wp-content/uploads/2021/08/list-6.png" alt="Cod Filet Cooked Side">
+            <h3>Cod Filet Cooked Side</h3>
+            <p class="description">1/3 milk foam, 1/3 hot milk, 1/3 espresso</p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+    <div id="our-team">
+        <div class="team-header">
+            <p class="subtitle">Our Top Team</p>
+            <h2>MEET OUR PROFESSIONALS</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="person">
+                <div class="image-container">
+                    <img src="https://themexbd.com/poket/restaurant/wp-content/uploads/2021/11/team-01.jpg"
+                        alt="Marcellus H. Waddell">
+                </div>
+                <div class="person-info">
+                    <h3>MARCELLUS H. WADDELL</h3>
+                    <p class="role">Senior Chefs</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="menu-item">
-                <img src="https://example.com/menu-item2.jpg" alt="Menu Item 2">
-                <h3>Menu Item 2</h3>
-                <p>Another tasty option.</p>
-                <span>$12.99</span>
+
+            <!-- Team Member 2 -->
+            <div class="person">
+                <div class="image-container">
+                    <img src="https://themexbd.com/poket/restaurant/wp-content/uploads/2021/11/team-02.jpg"
+                        alt="Robin Smith">
+                </div>
+                <div class="person-info">
+                    <h3>ROBIN SMITH</h3>
+                    <p class="role">Manager</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="menu-item">
-                <img src="https://example.com/menu-item3.jpg" alt="Menu Item 3">
-                <h3>Menu Item 3</h3>
-                <p>Our signature dish.</p>
-                <span>$14.99</span>
+
+            <!-- Team Member 3 -->
+            <div class="person">
+                <div class="image-container">
+                    <img src="https://themexbd.com/poket/restaurant/wp-content/uploads/2021/11/team-03.jpg"
+                        alt="Shief Khan">
+                </div>
+                <div class="person-info">
+                    <h3>SHIEF KHAN</h3>
+                    <p class="role">Visitor</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <h2>What Our Customers Say</h2>
-        <div class="testimonial-grid">
-            <div class="testimonial">
-                <p>Great service and food!</p>
-                <h3>John Doe</h3>
-            </div>
-            <div class="testimonial">
-                <p>Love the ambiance!</p>
-                <h3>Jane Doe</h3>
+
+
+        <!-- Contact Section -->
+        <div class="contact-info">
+            <div class="contact-inner">
+                <img src="https://themexbd.com/poket/restaurant/wp-content/uploads/2021/11/call-icon.png"
+                    alt="call icon" class="call-icon">
+                <div class="contact-text">
+                    <p>We realize that you lead a busy life, so we have made it easy for you</p>
+                    <p>to drop off your vehicle 24/7. Call Us +908 588 585 88</p>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Contact Form Section -->
-    <section id="outer-form-1">
-        <h2>Get in Touch</h2>
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
-            <button>Send Message</button>
-        </form>
-    </section>
+    <div class="divider"></div>
+    <footer class="footer" >
+        <div class="foot-1">
+            <img src="https://themexbd.com/poket/restaurant/wp-content/uploads/2021/11/logo.png" alt="logo" />
+            <p>
+                A monthly digest of the latest news and venen is urna resources. our
+                clinic was created to ma your smile beautiful, healthy and snow-white.
+                venenatis urna resources.
+            </p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-times"></i></a>
+            </div>
+        </div>
+
+        <div class="foot-2">
+            <h2>Navigation</h2>
+            <ul class="foot-nav" style="list-style: none;" >
+                <li><a style="text-decoration: none; color: inherit;" href="#">Become an Affiliate</a></li>
+                <li><a style="text-decoration: none; color: inherit;" href="#">Community Meetups</a></li>
+                <li><a style="text-decoration: none; color: inherit;" href="#">Why Buy With Us?</a></li>
+                <li><a style="text-decoration: none; color: inherit;" href="#">Blog and News</a></li>
+                <li><a style="text-decoration: none; color: inherit;" href="#">About</a></li>
+            </ul>
+        </div>
+
+        <div class="foot-3">
+            <h2>Address Us</h2>
+            <p><i class="fas fa-map-marker-alt"></i> 378 FA Tower, William SBI 2123, IL, US</p>
+            <p><i class="fas fa-phone"></i> Telephone: (0922) 3354 2252</p>
+            <p><i class="fas fa-envelope"></i> demo@example.com</p>
+            <p><i class="far fa-clock"></i> Time: 9.00am-4.00pm</p>
+        </div>
+
+        <div class="foot-4">
+            <h2>Gallery</h2>
+            <div class="gallery-images">
+                <img height="65px" src="pic1.jpg" alt="Gallery Image">
+                <img height="65px" src="pic2.jpg" alt="Gallery Image">
+                <img height="65px" src="pic3.jpg" alt="Gallery Image">
+                <img height="65px" src="pic1.jpg" alt="Gallery Image">
+                <img height="65px" src="pic2.jpg" alt="Gallery Image">
+                <img height="65px" src="pic3.jpg" alt="Gallery Image">
+            </div>
+        </div>
+
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>

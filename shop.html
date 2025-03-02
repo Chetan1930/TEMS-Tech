@@ -1,48 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Menu</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="shop.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .menu-container {
-            /* border: 3px solid red; */
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .menu-section {
-            margin-top: 30px;
-            /* margin-bottom: 40px; */
-        }
-        .menu-section h2 {
-            font-size: 24px;
-            color: #e67e22;
-            border-bottom: 2px solid #e67e22;
-            padding-bottom: 10px;
-        }
-        .menu-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #ddd;
-        }
-        .menu-item:last-child {
-            border-bottom: none;
-        }
-        .item-name {
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .item-price {
-            font-size: 18px;
-            color: #27ae60;
-        }
-    </style>
+
 </head>
+
 <body>
 
 
@@ -55,211 +24,190 @@
             <span class="hamburger">&#9776;</span>
             <ul class="nav-links">
                 <li class="dropdown">
-                    <a href="index.html">Home ▼</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Home Option 1</a></li>
-                        <li><a href="#">Home Option 2</a></li>
-                        <li><a href="#">Home Option 3</a></li>
-                    </ul>
+                    <a href="index.html">Home</a>
+
                 </li>
                 <li><a href="about.html">About</a></li>
                 <li class="dropdown">
-                    <a href="menu.html">Menu ▼</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Menu Option 1</a></li>
-                        <li><a href="#">Menu Option 2</a></li>
-                    </ul>
+                    <a href="menu.html">Menu </a>
                 </li>
                 <li class="dropdown">
-                    <a href="pages.html">Pages ▼</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Page Option 1</a></li>
-                        <li><a href="#">Page Option 2</a></li>
-                    </ul>
+                    <a href="pages.html">Pages</a>
                 </li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-    
+
             <div class="icons">
                 <button class="icon-button">🔍</button>
-                <div class="cart">
-                    <button class="icon-button">🛒</button>
-                    <span>0</span>
-                </div>
+                
             </div>
         </nav>
     </header>
-    
 
-    
-    <div class="menu-container">
-        <!-- Appetizers Section -->
-        <div class="menu-section">
-            <h2>Appetizers</h2>
-            <div class="menu-item">
-                <span class="item-name">Bruschetta</span>
-                <span class="item-price">₹8.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Garlic Bread</span>
-                <span class="item-price">₹6.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Stuffed Mushrooms</span>
-                <span class="item-price">₹9.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Caesar Salad</span>
-                <span class="item-price">₹7.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Spring Rolls</span>
-                <span class="item-price">₹5.99</span>
-            </div>
-        </div>
 
-        <!-- Main Courses Section -->
-        <div class="menu-section">
-            <h2>Main Courses</h2>
-            <div class="menu-item">
-                <span class="item-name">Grilled Salmon</span>
-                <span class="item-price">₹18.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Chicken Alfredo</span>
-                <span class="item-price">₹14.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Beef Steak</span>
-                <span class="item-price">₹22.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Vegetable Stir Fry</span>
-                <span class="item-price">₹12.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Spaghetti Bolognese</span>
-                <span class="item-price">₹13.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">BBQ Ribs</span>
-                <span class="item-price">₹19.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Margherita Pizza</span>
-                <span class="item-price">₹10.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Lobster Tail</span>
-                <span class="item-price">₹29.99</span>
-            </div>
-        </div>
-
-        <!-- Desserts Section -->
-        <div class="menu-section">
-            <h2>Desserts</h2>
-            <div class="menu-item">
-                <span class="item-name">Chocolate Lava Cake</span>
-                <span class="item-price">₹7.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Cheesecake</span>
-                <span class="item-price">₹6.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Tiramisu</span>
-                <span class="item-price">₹8.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Apple Pie</span>
-                <span class="item-price">₹5.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Ice Cream Sundae</span>
-                <span class="item-price">₹4.99</span>
-            </div>
-        </div>
-
-        <!-- Beverages Section -->
-        <div class="menu-section">
-            <h2>Beverages</h2>
-            <div class="menu-item">
-                <span class="item-name">Fresh Orange Juice</span>
-                <span class="item-price">₹3.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Iced Tea</span>
-                <span class="item-price">₹2.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Mojito</span>
-                <span class="item-price">₹5.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Cappuccino</span>
-                <span class="item-price">₹4.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Red Wine</span>
-                <span class="item-price">₹7.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Sparkling Water</span>
-                <span class="item-price">₹1.99</span>
-            </div>
-        </div>
-
-        <!-- Sides Section -->
-        <div class="menu-section">
-            <h2>Sides</h2>
-            <div class="menu-item">
-                <span class="item-name">French Fries</span>
-                <span class="item-price">₹3.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Onion Rings</span>
-                <span class="item-price">₹4.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Mashed Potatoes</span>
-                <span class="item-price">₹3.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Grilled Vegetables</span>
-                <span class="item-price">₹5.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Garlic Parmesan Fries</span>
-                <span class="item-price">₹4.99</span>
-            </div>
-        </div>
-
-        <!-- Specials Section -->
-        <div class="menu-section">
-            <h2>Specials</h2>
-            <div class="menu-item">
-                <span class="item-name">Chef's Special Pasta</span>
-                <span class="item-price">₹16.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Surf & Turf</span>
-                <span class="item-price">₹34.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Truffle Risotto</span>
-                <span class="item-price">₹19.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Seafood Platter</span>
-                <span class="item-price">₹28.99</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Vegetarian Delight</span>
-                <span class="item-price">₹14.99</span>
-            </div>
+    <div id="bannerAfterHeader">
+        <div class="insideBanner">
+            <h3 id="my-test">Shop</h3>
+            <p id="whereIam">You Are Currently Here! > HomeContact >Shop </p>
         </div>
     </div>
+
+
+
+
+    <div class="container">
+
+
+        <aside class="sidebar">
+            <div class="filter-price">
+                <h3>Filter by price</h3>
+                <div class="filter-range">
+                    <label for="price">Price: $20 - $300</label>
+                    <input type="range" id="price" name="price" min="20" max="300">
+                </div>
+                <button class="filter-button">Filter</button>
+            </div>
+            <div class="product-categories">
+                <h3>Product categories</h3>
+                <ul>
+                    <li><a href="#">Food Burger</a></li>
+                    <li><a href="#">Food Fish</a></li>
+                    <li><a href="#">Orang Food</a></li>
+                    <li><a href="#">Uncategorized</a></li>
+                </ul>
+            </div>
+            <div class="products">
+                <h3>Products</h3>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Food Burger">
+                        <a href="#">Food Burger</a>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://images.pexels.com/photos/675925/pexels-photo-675925.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Fresh Food">
+                        <a href="#">Fresh Food</a>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Just Beer">
+                        <a href="#">Just Beer</a>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://images.pexels.com/photos/616469/pexels-photo-616469.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Curry Puff">
+                        <a href="#">Curry Puff</a>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://images.pexels.com/photos/373885/pexels-photo-373885.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Vegetable Burger">
+                        <a href="#">Vegetable Burger</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main class="product-grid">
+            <div class="product-item">
+                <div class="sale-badge">Sale!</div>
+                <img src="https://images.pexels.com/photos/616469/pexels-photo-616469.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Curry Puff">
+                <h3>Curry Puff</h3>
+                <span class="price">
+                    <del>$60</del>
+                    $20
+                </span>
+            </div>
+            <div class="product-item">
+                <div class="sale-badge">Sale!</div>
+                <img src="https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Fish & Beer">
+                <h3>Fish & Beer</h3>
+                <span class="price">
+                    <del>$60</del>
+                    $30
+                </span>
+            </div>
+            <div class="product-item">
+                <div class="sale-badge">Sale!</div>
+                <img src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Food Burger">
+                <h3>Food Burger</h3>
+                <span class="price">
+                    <del>$60</del>
+                    $20
+                </span>
+            </div>
+            <div class="product-item">
+                <div class="sale-badge">Sale!</div>
+                <img src="https://images.pexels.com/photos/262918/pexels-photo-262918.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Food Fish">
+                <h3>Food Fish</h3>
+                <span class="price">
+                    <del>$60</del>
+                    $20
+                </span>
+            </div>
+            <div class="product-item">
+                <div class="sale-badge">Sale!</div>
+                <img src="https://images.pexels.com/photos/675925/pexels-photo-675925.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Fresh Food">
+                <h3>Fresh Food</h3>
+                <span class="price">
+                    <del>$60</del>
+                    $20
+                </span>
+            </div>
+            <div class="product-item">
+                <div class="sale-badge">Sale!</div>
+                <img src="https://images.pexels.com/photos/1633557/pexels-photo-1633557.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Fresh Food">
+                <h3>Fresh Food</h3>
+                <span class="price">
+                    <del>$60</del>
+                    $20
+                </span>
+            </div>
+            <div class="product-item">
+                <div class="sale-badge">Sale!</div>
+                <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Just Beer">
+                <h3>Just Beer</h3>
+                <span class="price">
+                    <del>$60</del>
+                    $100
+                </span>
+            </div>
+            <div class="product-item">
+                <div class="sale-badge">Sale!</div>
+                <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="New Food">
+                <h3>New Food</h3>
+                <span class="price">
+                    <del>$60</del>
+                    $100
+                </span>
+            </div>
+            <div class="product-item">
+                <div class="sale-badge">Sale!</div>
+                <img src="https://images.pexels.com/photos/1260968/pexels-photo-1260968.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="New Product">
+                <h3>New Product</h3>
+                <span class="price">
+                    <del>$60</del>
+                    $100
+                </span>
+            </div>
+        </main>
+        <div class="pagination">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">→</a>
+        </div>
+    </div>
+
+
     <footer class="footer">
         <div class="foot-1">
             <img src="https://themexbd.com/poket/restaurant/wp-content/uploads/2021/11/logo.png" alt="logo" />

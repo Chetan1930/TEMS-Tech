@@ -13,7 +13,7 @@ body {
 /* Header and Navigation */
 .header {
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -62,48 +62,12 @@ body {
   color: #f0ad4e;
 }
 
-/* Dropdown Styles */
-.dropdown {
-  position: relative;
-}
 
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #c7a87d;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Corrected box-shadow */
-  z-index: 10;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu li {
-  padding: 8px 12px; /* Reduced padding for dropdown items */
-  text-align: left;
-}
-
-.dropdown-menu li a {
-  display: block;
-  text-decoration: none;
-  color: #333;
-  font-size: 12px; /* Consistent font size for dropdown */
-}
-
-.dropdown-menu li a:hover {
-  background-color: #f0f0f0;
-}
 
 /* Icons */
 .icons {
   display: flex;
-  gap: 10px; /* Reduced gap for smaller screens */
+  gap: 10px; 
   align-items: center;
 }
 
@@ -114,7 +78,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #bb8858;
-  border-radius: 50%;
+  border-radius: 10%;
   color: white;
   font-size: 14px; /* Adjusted font size for smaller screens */
   border: none;
@@ -122,20 +86,8 @@ body {
 }
 
 /* Cart Icon */
-.cart {
-  position: relative;
-}
 
-.cart span {
-  position: absolute;
-  top: -3px;
-  right: -3px;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 10px; /* Adjusted font size for smaller screens */
-  padding: 2px 4px;
-  border-radius: 50%;
-}
+
 
 /* Hamburger Icon */
 .hamburger {
@@ -189,6 +141,8 @@ body {
       margin-top: 10px;
   }
 }
+
+
 
 /* home section h yo...jisme navbar h chlo ab isko responsive bnate h  */
 
@@ -371,7 +325,7 @@ body {
   min-width: 280px;
   max-width: 350px;
   padding: 40px 30px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: rgba(14, 12, 12, 0.05);
   border-radius: 8px;
   transition: all 0.3s ease;
